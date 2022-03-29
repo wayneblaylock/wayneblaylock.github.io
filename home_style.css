@@ -224,6 +224,13 @@ body #footer #flex_container img{
     padding-right: 30px;
 }
 
+body #footer #sub_flex_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 body #footer #main_links{
     width: 175px;
     margin: 0;
