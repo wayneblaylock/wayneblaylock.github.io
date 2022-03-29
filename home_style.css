@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 80px;
+    font-family: 'Signika', sans-serif;
+    color: rgb(27, 27, 27);
+}
+
+body #return_home{
+    text-decoration: none;
+}
+
+body #header{
+    background-color: rgb(14, 14, 143);
+    color: white;
+    margin: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    box-shadow: black 0px 1px 10px;
+}
+
+
+body #header h1{
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+
+body #header img{
+    display: inline;
+}
+
+body #intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+body #intro p{
+    max-width: 600px;
+    font-size: 25px;
+    margin: 60px;
+}
+
+body #intro p #beginning{
+    font-size: 35px;
+    font-weight: 900;
+    color: rgb(0, 0, 112);
+}
+
+body #intro img{
+    border-radius: 50%;
+    margin: 60px;
+}
+
+body .banner_nav{
+    text-decoration: none;
+}
+
+body .nav_banner{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+body .nav_banner h2{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    color: rgb(235, 235, 235);
+}
+
+body .nav_banner p{
+    font-size: 30px;
+    margin: 0;
+    padding: 0 50px 50px 50px;
+    text-align: center;
+    color: rgb(235, 235, 235);
+}
+
+body #freelancing{
+    background: rgb(180, 180, 190) url(media/freelancing_background.jpg) center no-repeat;
+    background-size: cover;
+}
+
+body #freelancing #color_wash{
+    margin: 0;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(40, 40, 50, 0.35);
+    transition: .4s;
+}
+
+body #freelancing #color_wash:hover{
+    background-color: rgba(128, 0, 128, 0.500);
+    transition: .6s;
+}
+
+body #portfolio{
+    background: rgb(170, 170, 180) url(media/portfolio_background.jpg) center no-repeat;
+    background-size: cover;
+}
+
+body #portfolio #color_wash{
+    margin: 0;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(40, 40, 50, 0.35);
+    transition: .4s;
+}
+
+body #portfolio #color_wash:hover{
+    background-color: rgba(0, 45, 128, 0.5);
+    transition: .6s;
+}
+
+body #resume{
+    background: rgb(150, 150, 160) url(media/resume_background.jpg) center no-repeat;
+    background-size: cover;
+}
+
+body #resume #color_wash{
+    margin: 0;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(40, 40, 50, 0.35);
+    transition: .4s;
+}
+
+body #resume #color_wash:hover{
+    background-color: rgba(0, 128, 6, 0.5);
+    transition: .6s;
+}
+
+body #about_me{
+    background: rgb(130, 130, 140) url(media/about_me_background.jpg) center no-repeat;
+    background-size: cover;
+}
+
+body #about_me #color_wash{
+    margin: 0;
+    width: 100%;
+    height: 250px;
+    background-color: rgba(40, 40, 50, 0.35);
+    transition: .4s;
+}
+
+body #about_me #color_wash:hover{
+    background-color: rgb(128, 15, 0, 0.5);
+    transition: .6s;
+}
+
+body #contact_me{
+    text-align: center;
+    padding-bottom: 60px;
+    font-size: 25px;
+    margin: 0 7%;
+}
+
+body #contact_me h2{
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+body #contact_me a{
+    text-decoration: none;
+    background-color: rgb(14, 14, 143);
+    border: solid rgb(14, 14, 143) 3px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+body #contact_me a:hover{
+    background-color: white;
+    color: rgb(14, 14, 143);
+    transition: .5s;
+}
+
+body #footer{
+    background-color: rgb(123, 123, 135);
+}
+
+body #footer a{
+    color: white;
+}
+
+body #footer #flex_container{
+    margin: 0;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+body #footer #flex_container img{
+    padding-right: 30px;
+}
+
+body #footer #main_links{
+    width: 175px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+body #footer #portfolio_links{
+    width: 175px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+body #footer #portfolio_links #list{
+    text-align: left;
+}
+
+body #footer a:hover{
+    color: rgb(0, 0, 112);;
+}
+
+body #footer #legal{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding: 0 0 10px;
+}
+
+body #footer #legal a{
+    margin: 0 10px;
+}
