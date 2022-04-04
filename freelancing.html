@@ -10,11 +10,11 @@
             max-width: 800px;
             margin: auto;
             padding: 30px;
+            padding-top: 0;
         }
 
         .content h2{
             text-align: center;
-            padding-top: 40px;
             font-size: 40px;
         }
 
@@ -81,6 +81,11 @@
             padding-left: 30px;
         }
 
+        .content .skill_box .skill img{
+            height: 25px;
+            width: auto;
+        }
+
         .content .skill_box .hidden_skill{
             display: none;
         }
@@ -106,8 +111,8 @@
     <a href="https://www.fiverr.com/wayneblaylock?up_rollout=true" target="_blank" class="no_decoration"><div class="freelancing_platform"><h4>Fiverr</h4><p>Fiverr is another popular platform, but rather than clients postin jobs, freelancers post what skills they offer, and clients order from them.</p><img src="media/fiverr_logo.jpg" alt="Fiverr Logo"></div></a>
     <h3>Offered Skills</h3>
     <div class="skill_box">
-        <div class="skill" onclick="toggle_display('hidden_skill1')";>
-        <img src="media/dropdown_arrow.png" alt="" height="15px" width="auto">
+        <div class="skill" onclick="toggle_display('hidden_skill1', 'dropimg1')";>
+        <img src="media/dropdown_arrow.png" id="dropimg1" alt="" height="15px" width="auto">
         <h4>3D Modeling, CAD</h4>
         </div>
         <div class="hidden_skill" id="hidden_skill1">
@@ -118,8 +123,8 @@
                 <li>Can also provide files for laser engraving and plasma cutting.</li>
             </ul>
         </div>
-        <div class="skill" onclick="toggle_display('hidden_skill2')">
-            <img src="media/dropdown_arrow.png" alt="" height="15px" width="auto">
+        <div class="skill" onclick="toggle_display('hidden_skill2', 'dropimg2')">
+            <img src="media/dropdown_arrow.png" id="dropimg2" alt="" height="15px" width="auto">
             <h4>Photo Editing</h4>
         </div>
         <div class="hidden_skill" id="hidden_skill2">
@@ -129,8 +134,8 @@
                 <li>Photo touchups.</li>
             </ul>
         </div>
-        <div class="skill" onclick="toggle_display('hidden_skill3')";>
-            <img src="media/dropdown_arrow.png" alt="" height="15px" width="auto">
+        <div class="skill" onclick="toggle_display('hidden_skill3', 'dropimg3')";>
+            <img src="media/dropdown_arrow.png" id="dropimg3" alt="" height="15px" width="auto">
             <h4>Website Creation</h4>
             </div>
             <div class="hidden_skill" id="hidden_skill3">
@@ -142,8 +147,8 @@
                     <li>Set up email forwarding(name@yoursite.com).</li>
                 </ul>
             </div>
-            <div class="skill" onclick="toggle_display('hidden_skill4')";>
-                <img src="media/dropdown_arrow.png" alt="" height="15px" width="auto">
+            <div class="skill" onclick="toggle_display('hidden_skill4', 'dropimg4')";>
+                <img src="media/dropdown_arrow.png" id="dropimg4" alt="" height="15px" width="auto">
                 <h4>Video/Audio Editing</h4>
                 </div>
                 <div class="hidden_skill" id="hidden_skill4">
@@ -153,8 +158,8 @@
                         <li>Basic transitions and animations.</li>
                     </ul>
                 </div>
-                <div class="skill" onclick="toggle_display('hidden_skill5')";>
-                    <img src="media/dropdown_arrow.png" alt="" height="15px" width="auto">
+                <div class="skill" onclick="toggle_display('hidden_skill5', 'dropimg5')";>
+                    <img src="media/dropdown_arrow.png" id="dropimg5" alt="" height="15px" width="auto">
                     <h4>Data Entry</h4>
                     </div>
                     <div class="hidden_skill" id="hidden_skill5">
@@ -172,11 +177,13 @@
 
 <script>
 
-    function toggle_display(x){
+    function toggle_display(x, y){
         if(document.getElementById(x).style.display == "block"){
             document.getElementById(x).style.display = "none";
+            document.getElementById(y).src = "media/dropdown_arrow.png";
         }else{
             document.getElementById(x).style.display = "block";
+            document.getElementById(y).src = "media/x_icon.png";            
         }
     }
 
